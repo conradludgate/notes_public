@@ -15,6 +15,8 @@ If there are files in the folder, you can also select it to have more options
 * open the file for rich markdown viewing, such as opening the file on github in browser
 * delete the file
 
+![demo](demo.gif)
+
 ## Dependencies
 
 * git
