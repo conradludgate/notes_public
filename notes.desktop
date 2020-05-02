@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Notes
+Exec=env EDITOR="code -w" env TERMINAL="termite" env SHELL="/usr/bin/zsh" notes.sh
+Type=Application
+Terminal=false
