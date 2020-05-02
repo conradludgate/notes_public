@@ -1,28 +1,28 @@
 # notes
 
-A script that helps me make notes easier.
+A script that helps me make notes easier
 
 ## How does it work
 
-Run the script (I've included a .desktop entry that I use rofi+drun to open)
-it then opens rofi, shows you all the files in your notes directory.
+After running the script, you will see a [rofi](https://github.com/davatorium/rofi) menu.
+If your notes folder is empty, it will display nothing but a prompt. Enter a title for your new note
 
-If you select a file, you can
-* edit it in an `$EDITOR` of your choice
+If your input leads to a unique filename, it will create a new file with your input as the markdown title
+and open it directly for editing
+
+If there are files in the folder, you can also select it to have more options
+* edit it the file in an `$EDITOR` of your choice
 * open the file for rich markdown viewing, such as opening the file on github in browser
 * delete the file
-
-Otherwise, if your input is unique, it will create a new file with your input as the markdown title
-and open it directly for editing
 
 ## Dependencies
 
 * git
 * rofi
 * xdg-utils
-* standard shell scripts like sed, awk, find, tr
+* standard shell tools like sed, awk, find, tr
 
-## Installation
+## Setup
 
 ```sh
 mkdir .local/notes # or any directory, custom locations require setting the $NOTES_DIR variable
@@ -44,4 +44,3 @@ There are a few variables that you can set.
 * `TERMINAL_EDITOR` If this is not 0, it will open your editor in a terminal first
 * `TERMINAL` Terminal to use for the editor or for saving files with git
 * `SHELL` Shell to launch terminal into
-
